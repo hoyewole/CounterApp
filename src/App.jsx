@@ -46,7 +46,7 @@ function App() {
                 </Nav>*/}
               </Navbar.Collapse>
             </Navbar>
-
+            {/*
             <Nav variant="underline" className="justify-content-end" style={{width: '100%'}}>
               <Nav.Item>
                 <Nav.Link as={Link} to="/CounterApp/" className={location.pathname === '/' ? 'active' : ''}>Custom Counter</Nav.Link>
@@ -57,7 +57,7 @@ function App() {
               <Nav.Item>
                 <Nav.Link as={Link} to="/CounterApp/my-error-page" className={location.pathname === '/my-error-page' ? 'active' : ''}>Error 404 Page</Nav.Link>
               </Nav.Item>
-            </Nav>
+            </Nav>*/}
 
             {/*
             <nav>
