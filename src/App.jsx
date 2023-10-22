@@ -26,7 +26,7 @@ function App() {
                     <Nav.Link href="/" className={location.pathname === '/' ? 'active' : ''}>Custom Counter</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link href="CounterApp/error-boundary" className={location.pathname === '/error-boundary' ? 'active' : ''}>Error Boundary Test</Nav.Link>
+                    <Nav.Link href="/error-boundary" className={location.pathname === '/error-boundary' ? 'active' : ''}>Error Boundary Test</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link href="/my-error-page" className={location.pathname === '/my-error-page' ? 'active' : ''}>Error 404 Page</Nav.Link>
@@ -51,8 +51,8 @@ function App() {
             </nav>*/}
 
             <Routes>
-              <Route path="/" element={<CustomCounterPage />} />
-              <Route path="/error-boundary" element={<ErrorBoundaryTest />} />
+              <Route path="CounterApp/" element={<CustomCounterPage />} />
+              <Route path="CounterApp/error-boundary" element={<ErrorBoundaryTest />} />
               <Route path="*" element={<NotFound />} />
               {/* Wildcard route for 404 Not Found */}
             </Routes>
