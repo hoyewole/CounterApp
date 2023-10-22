@@ -35,7 +35,7 @@ function App() {
               </Navbar.Collapse>
             </Navbar>
 
-            {/*
+            
             <nav>
               <ul>
                 <li>
@@ -48,7 +48,7 @@ function App() {
                   <Link to="/my-error-page">Error 404 Page</Link>
                 </li>
               </ul>
-            </nav>*/}
+            </nav>
 
             <Routes>
               <Route path="/CounterApp/" element={<CustomCounterPage />} />
