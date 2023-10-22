@@ -53,7 +53,7 @@ function App() {
             <Routes>
               <Route path="/CounterApp/" element={<CustomCounterPage />} />
               <Route path="/CounterApp/error-boundary" element={<ErrorBoundaryTest />} />
-              <Route path="*" element={<NotFound />} />
+              <Route path="/CounterApp/*" element={<NotFound />} />
               {/* Wildcard route for 404 Not Found */}
             </Routes>
         </Router>
