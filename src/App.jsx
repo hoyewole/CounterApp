@@ -23,6 +23,18 @@ function App() {
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav variant="underline" className="justify-content-end" style={{width: '100%'}}>
                   <Nav.Item>
+                    <Nav.Link as={Link} to="/CounterApp/" className={location.pathname === '/' ? 'active' : ''}>Custom Counter</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link as={Link} to="/CounterApp/error-boundary" className={location.pathname === '/error-boundary' ? 'active' : ''}>Error Boundary Test</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link as={Link} to="/CounterApp/my-error-page" className={location.pathname === '/my-error-page' ? 'active' : ''}>Error 404 Page</Nav.Link>
+                  </Nav.Item>
+                </Nav>
+              {/*
+                <Nav variant="underline" className="justify-content-end" style={{width: '100%'}}>
+                  <Nav.Item>
                     <Nav.Link href="/CounterApp/" className={location.pathname === '/CounterApp/' ? 'active' : ''}>Custom Counter</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
@@ -31,7 +43,7 @@ function App() {
                   <Nav.Item>
                     <Nav.Link href="/CounterApp/pages/my-error-page" className={location.pathname === '/CounterApp/pages/my-error-page' ? 'active' : ''}>Error 404 Page</Nav.Link>
                   </Nav.Item>
-                </Nav>
+                </Nav>*/}
               </Navbar.Collapse>
             </Navbar>
 
